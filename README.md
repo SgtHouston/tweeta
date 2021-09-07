@@ -8,4 +8,4 @@ npx sequelize-cli model:generate --name User --attributes username:string,passwo
 npx sequelize-cli model:generate --name Tweet --attributes UserId:integer,content:text
 npx sequelize-cli db:create
 npx sequelize-cli db:migrate
-npm install bcrypt
+npm i connect-session-sequelize express-session
