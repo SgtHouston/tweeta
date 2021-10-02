@@ -7,6 +7,7 @@ import TweetForm from '../components/TweetForm'
 function Dashboard() {
     const [tweets, setTweets] = useState([])
     const { user } = useSelector(state => state.user);
+    console.log(user)
 
     const fetchTweets = (data) => {
         fetch('/api/v1/tweets')
@@ -20,6 +21,7 @@ function Dashboard() {
         fetchTweets()
     }, [])
 
+    
     return (
         <Container>
             {user && <TweetForm onTweet={fetchTweets} />}

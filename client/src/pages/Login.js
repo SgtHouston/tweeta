@@ -31,9 +31,12 @@ export default function Login() {
                 } else {
                     dispatch(actionLoggedIn(data.user))
                     history.push('/')
+                    console.log(history)
                 }
             })
     }
+
+
 
     return (
         <Container>
